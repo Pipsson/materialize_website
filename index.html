@@ -96,6 +96,11 @@
 
 </section>
   <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/street.jpg" class="responsive-img" alt="">
+    </div>
+  </div>
 
   <!-- services / tabs -->
 
@@ -106,13 +111,27 @@
   <!-- footer -->
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
+
   <script>
     $(document).ready(function(){
       $('.sidenav').sidenav();
       $('.materialboxed').materialboxed();
+  
+      
     });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
   </script>
 </body>
 </html>
