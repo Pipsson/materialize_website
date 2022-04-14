@@ -32,11 +32,69 @@
         <nav class="nav-wrapper transparent">
             <div class="container">
                 <a href="#" class="brand-logo">Website Creater</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class=" right hide-on-med-and-down">
+                    <li><a href="#">Website's</a></li>
+                    <li><a href="#">Conacts</a></li>
+                    <li><a href="#">Services</a></li>
+
+                    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                      <li><a href="#">Website's</a></li>
+                      <li><a href="#">Conacts</a></li>
+                      <li><a href="#">Services</a></li>
+                    </ul>
+                </ul>
             </div>
         </nav>
     </header>
   <!-- photo / grid -->
+<section class="section container" id="photos">
+    <div class="row">
+      <div class="col l6 s12">
+        <img src="images/portrait.jpg" alt="" class="responsive-img  materialboxed">
+      </div>
+      <div class="col l6 s12">
+        <h2>Portraits</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nulla illo exercitationem qui
+           esse alias eligendi magni hic? 
+          Fuga neque, minima facilis nobis eum officia quia vero cumque cupiditate odio!
+        </p>
+      </div>
+    </div>
 
+    <!---another row-->
+    <div class="row">
+      <div class="col l6 s12">
+        <img src="images/nature.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col l6 s12">
+        <h2>Nature</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nulla illo exercitationem qui
+           esse alias eligendi magni hic? 
+          Fuga neque, minima facilis nobis eum officia quia vero cumque cupiditate odio!
+        </p>
+      </div>
+    </div>
+    <!---another row-->
+    <div class="row">
+      <div class="col l6 s12">
+        <img src="images/city.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col l6 s12">
+        <h2>Cityscapes</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nulla illo exercitationem qui
+           esse alias eligendi magni hic? 
+          Fuga neque, minima facilis nobis eum officia quia vero cumque cupiditate odio!
+        </p>
+      </div>
+    </div>
+
+</section>
   <!-- parallax -->
 
   <!-- services / tabs -->
@@ -52,7 +110,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
-
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialboxed();
     });
   </script>
 </body>
